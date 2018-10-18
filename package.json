@@ -1,0 +1,23 @@
+{
+  "name": "fcc_product-landing-page",
+  "version": "1.0.0",
+  "description": "Responsive Web Design Projects - Build a Product Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matterholt/FCC_Product-Landing-Page.git"
+  },
+  "author": "MAtterholt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matterholt/FCC_Product-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/matterholt/FCC_Product-Landing-Page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
