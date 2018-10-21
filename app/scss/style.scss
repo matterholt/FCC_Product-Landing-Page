@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-///
-
-//add a media querry that will change to columns
-
 ////
 body {
   background-color: #c3c3c3;
@@ -19,6 +15,11 @@ body {
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2em;
+  }
 }
 #header-img {
   height: 150px;
@@ -30,16 +31,15 @@ body {
 #nav-bar {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
   width: 100%;
   background-color: #3f3f3f;
 }
 
 #nav-link {
-  padding: 0.5em;
-  font-size: 2em;
-  height: 2.2em;
+  padding: 0.5em 2em;
+  font-size: 1.2em;
   font-style: none;
   text-decoration: none;
   color: #fff;
@@ -57,7 +57,9 @@ body {
   flex-flow: row wrap;
   justify-content: space-evenly;
   &__intro {
+    width: 35em;
     margin: 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -74,19 +76,27 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-content: stretch;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
+  &__title {
+    text-align: center;
+    font-weight: 800;
+  }
+  &__pic {
+    width: 100%;
+  }
   &__card {
     flex-grow: 1;
     min-height: 25em;
     width: 100%;
     max-width: 20em;
-    padding: 1em;
-    margin: 1em;
+    margin: 2em 1.2em;
     border-radius: 2px;
     background-color: #fff;
-    text-align: center;
     box-shadow: 0.2em 0.5em 1em grey;
+  }
+  &__content {
+    padding: 0.5em 2em;
   }
 }
 
@@ -100,4 +110,28 @@ body {
 #email {
 }
 #submit {
+}
+
+///
+
+//add a media querry that will change to columns
+@media (max-width: 530px) {
+  #nav-bar {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  #nav-link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #header {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
 }
