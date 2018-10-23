@@ -71,6 +71,12 @@ body {
     width: 100%;
   }
 }
+#video__content {
+  position: absolute;
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+}
 
 .product {
   display: flex;
@@ -84,19 +90,20 @@ body {
   }
   &__pic {
     width: 100%;
+    border-radius: 5px 5px 0px 0;
   }
   &__card {
-    flex-grow: 1;
     min-height: 25em;
-    width: 100%;
     max-width: 20em;
     margin: 2em 1.2em;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #fff;
     box-shadow: 0.2em 0.5em 1em grey;
   }
   &__content {
     padding: 0.5em 2em;
+    list-style: none;
+    text-align: center;
   }
 }
 
@@ -115,16 +122,38 @@ body {
 ///
 
 //add a media querry that will change to columns
-@media (max-width: 530px) {
+@media (max-width: 590px) {
   #nav-bar {
     display: flex;
     flex-flow: column;
     text-align: center;
     width: 100%;
   }
+  #video__content {
+    position: relative;
+    font-size: 1.5em;
+    width: 100%;
+    background-color: #3f3f3f;
+    color: #fff;
+  }
 
   #nav-link {
     width: 100%;
+  }
+  .product {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    justify-content: center;
+    width: 100%;
+    &__card {
+      min-height: 25em;
+      max-width: 80%;
+      margin: 2em 1.2em;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0.2em 0.5em 1em grey;
+    }
   }
 }
 
@@ -134,4 +163,7 @@ body {
     flex-flow: column;
     text-align: center;
   }
+}
+
+@media (max-width: 1076px) {
 }
