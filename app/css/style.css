@@ -90,13 +90,21 @@ body {
     text-align: center; }
 
 #contact {
-  font-size: 2em;
+  font-size: 1em;
   width: 100%;
   background-color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding: 2em; }
 
 #form {
   font-size: 2em; }
+
+input {
+  margin: 1em;
+  font-size: 0.5em; }
+
+#submit {
+  border-radius: 0.1em; }
 
 @media (max-width: 590px) {
   #nav-bar {
