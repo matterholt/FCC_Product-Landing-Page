@@ -65,11 +65,10 @@ body {
 
 #video {
   display: flex;
+  width: 100%;
+  background-color: #3f3f3f;
   flex-flow: column;
   align-items: center;
-  img {
-    width: 100%;
-  }
 }
 #video__content {
   position: absolute;
@@ -111,9 +110,12 @@ body {
   font-size: 2em;
   width: 100%;
   background-color: #fff;
+  text-align: center;
 }
 #form {
+  font-size: 2em;
 }
+
 #email {
 }
 #submit {
