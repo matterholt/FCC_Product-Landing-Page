@@ -8,21 +8,30 @@
     <title>Forge Chef Knives</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!--
+
+2. I can see an image within the #header element with 
+a corresponding id="header-img".
+ A company logo would make a good image here.
+
+1. The navbar should always be at the top of the viewport.
+-->
 
 <body>
     <header id="header">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#howMade">Process</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#price">Pricing</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
         <div id="header-img">
             <h1>hammer</h1>
+            <img src="" alt="hammer and anvil">
         </div>
         <h1>M. A. S. <br> Forge Knives</h1>
     </header>
 
-    <nav id="nav-bar">
-        <a id="nav-link" href="#howMade">Process</a>
-        <a id="nav-link" href="#features">Features</a>
-        <a id="nav-link" href="#price">Pricing</a>
-        <a id="nav-link" href="#contact">Contact</a>
-    </nav>
 
     <main class="content">
 
@@ -38,11 +47,9 @@
             </p>
         </div>
 
-        <div id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/a10qaxUtSLg" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/a10qaxUtSLg" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-        </div>
 
         <div class="product">
             <div class="product__card" id="howMade">
@@ -86,6 +93,7 @@
             </form>
         </div>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 

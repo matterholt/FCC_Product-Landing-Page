@@ -31,13 +31,14 @@ body {
 #nav-bar {
   display: flex;
   flex-flow: row wrap;
+  position: fixed;
   justify-content: center;
   align-items: baseline;
   width: 100%;
   background-color: #3f3f3f;
 }
 
-#nav-link {
+.nav-link {
   padding: 0.5em 2em;
   font-size: 1.2em;
   font-style: none;
@@ -124,7 +125,8 @@ input {
 #email {
 }
 #submit {
-  border-radius: 0.1em;
+  border-radius: 0.3em;
+  padding: 0.5em;
 }
 
 ///
