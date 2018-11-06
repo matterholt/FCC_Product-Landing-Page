@@ -11,30 +11,28 @@ body {
 }
 
 #header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
+  top: 0;
+  background: #c3c3c3;
+  position: fixed;
+  width: 100%;
   h1 {
     text-align: center;
     font-weight: 900;
     font-size: 2em;
   }
 }
+
 #header-img {
   height: 150px;
   width: 150px;
-  margin: 1em;
   border: 2px solid #1c1f27;
 }
 
 #nav-bar {
   display: flex;
   flex-flow: row wrap;
-  position: fixed;
   justify-content: center;
   align-items: baseline;
-  width: 100%;
   background-color: #3f3f3f;
 }
 
@@ -46,17 +44,18 @@ body {
   color: #fff;
   transition: background-color 0.5s;
   &:hover {
-    //background: linear-gradient(bottom, black, white);
     background-color: #808080;
   }
   &:active {
     color: white;
   }
 }
+
 .content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  margin-top: 170px;
   &__intro {
     width: 35em;
     margin: 1em;
@@ -126,7 +125,7 @@ input {
 }
 #submit {
   border-radius: 0.3em;
-  padding: 0.5em;
+  padding: 0.2em;
 }
 
 ///
@@ -147,8 +146,20 @@ input {
     color: #fff;
   }
 
-  #nav-link {
-    width: 100%;
+  .nav-link {
+    padding: 0.5em 2em;
+    font-size: 1.2em;
+    font-style: none;
+    text-decoration: none;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: #808080;
+    }
+    &:active {
+      color: white;
+    }
   }
   .product {
     display: flex;
@@ -165,15 +176,7 @@ input {
       box-shadow: 0.2em 0.5em 1em grey;
     }
   }
-}
-
-@media (max-width: 400px) {
-  #header {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
+  .content {
+    margin-top: 550px;
   }
-}
-
-@media (max-width: 1076px) {
 }
